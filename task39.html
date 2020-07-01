@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#sky{
+			height: 400px;
+			width: 100%;
+			background: #53aede;
+		}
+		#moon{
+			height: 100px;
+			width: 100px;
+			background: white;
+			border-radius: 50%;
+			margin-left: 85%;
+			margin-top: -2%;
+		}
+		#river{
+			height: 350px;
+			width: 100%;
+			background: linear-gradient(#00ffff 30%, #6A5ACD 90%);
+		}
+		#mountain1{
+			height: 0px;
+			width: 0px;
+			border-bottom: solid 150px #483D8B;
+			border-left: solid 150px transparent;
+			border-top: solid 150px transparent;
+			border-right: solid 150px transparent;
+			margin-top: -316px;
+			margin-left: 73%;
+			opacity: 0.8;
+		}
+		#mountain2{
+			height: 0px;
+			width: 0px;
+			border-bottom: solid 120px #483D8B;
+			border-left: solid 120px transparent;
+			border-top: solid 120px transparent;
+			border-right: solid 120px transparent;
+			margin-top: -238px;
+			margin-left: 58%;
+			opacity: 0.8;
+		}
+		#mountain3{
+			height: 0px;
+			width: 0px;
+			border-bottom: solid 100px #483D8B;
+			border-left: solid 100px transparent;
+			border-top: solid 100px transparent;
+			border-right: solid 100px transparent;
+			margin-top: -210px;
+			margin-left: 67%;			
+			opacity: 0.8;
+		}
+		#boat1{
+			height: 25px;
+			width: 60px;
+			background: #5f5f5f;
+			margin-left: 710px;
+			margin-top: 15%;
+			border-bottom-left-radius: 20px;
+			border-bottom-right-radius: 10px;
+			animation: move 8s linear infinite;
+		}
+		#boat2{
+			height: 0px;
+			width: 0px;
+			border-bottom: solid 45px #5f5f5f;
+			border-left: solid 30px transparent;
+			border-top: solid 5px transparent;
+			border-right: solid 0px transparent;
+			margin-top: -80px;
+			margin-left: 711px;
+			animation: move 8s linear infinite;
+        }
+	    #boat3{
+			height: 0px;
+			width: 0px;
+			border-bottom: solid 45px #5f5f5f;
+			border-left: solid 0px transparent;
+			border-top: solid 5px transparent;
+			border-right: solid 20px transparent;
+			margin-top: -50px;
+			margin-left: 745px;
+			animation: move 8s linear infinite;
+		}
+		@keyframes move{
+			0%{
+				transform: translate(0px, 0px);
+			}
+			100%{
+				transform: translate(-450px, 0px);
+			}
+		}
+		 #stick{
+			height: 500px;
+			width: 100px;
+			background: white;
+			margin-top: -545px;
+			margin-left: 120px;
+		}
+		#stick1{
+            height: 0px;
+			width: 0px;
+			border-top: solid 100px #483d8b;
+			border-left: solid 0px transparent;
+			border-bottom: solid 100px transparent;
+			border-right: solid 100px transparent;
+		}
+		#stick2{
+            height: 0px;
+			width: 0px;
+			border-top: solid 100px #483d8b;
+			border-left: solid 0px transparent;
+			border-bottom: solid 100px transparent;
+			border-right: solid 100px transparent;
+		}
+		#stick3{
+            height: 0px;
+			width: 0px;
+			border-top: solid 100px #483d8b;
+			border-left: solid 0px transparent;
+			border-bottom: solid 100px transparent;
+			border-right: solid 100px transparent;
+		}
+		#stick4{
+            height: 0px;
+			width: 0px;
+			border-bottom: solid 100px #483d8b;
+			border-left: solid 100px transparent;
+			border-top: solid 100px transparent;
+			border-right: solid 0px transparent;
+			margin-top: -400px;
+		}
+		#stick5{
+            height: 0px;
+			width: 0px;
+			border-bottom: solid 100px #483d8b;
+			border-left: solid 100px transparent;
+			border-top: solid 100px transparent;
+			border-right: solid 0px transparent;
+			margin-top: -400px;
+		}
+		#down{
+            height: 50px;
+			width: 250px;
+			border-bottom: solid 45px #483D8B;
+			border-left: solid 0px transparent;
+			border-top: solid 0px transparent;
+			border-right: solid 20px transparent;
+			margin-top: 40px;
+        }
+	    #head{
+			height: 20px;
+			width: 100px;
+			background: white;
+			border: 2px solid black;
+			margin-top: -524px;
+			margin-left: 118px;
+		}
+		.line{
+			height: 50px;
+			width: 21px;
+			background: white;
+			border: 2px solid black;
+		}
+		.one{
+			margin-top: -77px;
+			margin-left: 120px;
+		}
+		.two{
+			margin-top: -54px;
+			margin-left: 145px;
+		}
+		.three{
+			margin-top: -54px;
+			margin-left: 170px;
+		}
+		.four{
+			margin-top: -54px;
+			margin-left: 195px;
+		}
+		#triangle{
+			height: 0px;
+			width: 0px;
+			border-bottom: solid 50px  #483d8b ;
+			border-left: solid 65px transparent;
+			border-top: solid 65px transparent;
+			border-right: solid 65px transparent;
+			margin-top: -168px;
+			margin-left: 104px;
+		}
+		#circle{
+			height: 20px;
+			width: 20px;
+			border-radius: 50%;
+			background:  #483d8b;
+			margin-left: 160px;
+			margin-top: -62px; 
+		}
+		#tikki{
+			height: 30px;
+			width: 5px;
+			background: #483D8B;
+			border-radius: 10px;
+			margin-left: 167px;
+			margin-top: -37px; 
+		}
+		.light{
+			height: 70px;
+			width: 70%;
+			margin-left: 220px;
+			margin-top: 50px;
+			transform-style: preserve-3d;
+			transform-origin: left center;
+			transform: perspective(500px) rotateY(-20deg);
+			background: linear-gradient(90deg, #f7f2b4 40%, rgba(255, 255, 255, 0) 100%);
+			animation: abc 5s linear infinite;
+		}
+		@keyframes abc{
+			25%{
+				transform: perspective(30px);
+			}
+			75%{
+				transform: perspective(300px);
+			}
+			100%{
+				transform: perspective(500px);
+			}
+		}
+		#sa{margin-top: 40px;margin-left: 500px;}
+		#sb{margin-left: 100px;}
+		#sc{margin-top: -100px;margin-left: 450px;}
+		#sd{margin-left: 600px;margin-top: -250px;}
+		#se{margin-top: -100px;margin-left: 50px;}
+	</style>
+</head>
+<body>
+   <div id="sky">
+   	<svg id="sa" height="50" width="50">
+		<polygon points="5,0 9,17 16,0 0,10 18,10 5,0" stroke="purple" stroke-width="2" fill="yellow"/>
+	</svg>
+	<svg id="sb" height="50" width="50">
+		<polygon points="5,0 9,17 16,0 0,10 18,10 5,0" stroke="purple" stroke-width="2" fill="yellow"/>
+	</svg>
+	<svg id="sc" height="50" width="50">
+		<polygon points="5,0 9,17 16,0 0,10 18,10 5,0" stroke="purple" stroke-width="2" fill="yellow"/>
+	</svg>
+	<svg id="sd" height="50" width="50">
+		<polygon points="5,0 9,17 16,0 0,10 18,10 5,0" stroke="purple" stroke-width="2" fill="yellow"/>
+	</svg><br>
+	<svg id="se" height="50" width="50">
+		<polygon points="5,0 9,17 16,0 0,10 18,10 5,0" stroke="purple" stroke-width="2" fill="yellow"/>
+	</svg><br>
+   	<div id="moon"></div>
+   </div>
+   <div id="river"><br>
+   	<div id="mountain1"></div>
+   	<div id="mountain2"></div>
+   	<div id="mountain3"></div>
+   	<div id="boat1"></div>
+   	<div id="boat2"></div>
+   	<div id="boat3"></div>
+   	<div id="down"></div>
+   	<div id="stick">
+   		<div id="stick1"></div>
+   		<div id="stick2"></div>
+   		<div id="stick3"></div>
+   		<div id="stick4"></div>
+   		<div id="stick5"></div>
+   	</div>
+   <div id="head"></div>
+   <div class="line one"></div>
+   <div class="line two"></div>
+   <div class="line three"></div>
+   <div class="line four"></div>
+   <div id="triangle"></div>
+   <div id="circle"></div>
+   <div id="tikki"></div>
+   <div class="light"></div>
+   </div>
+   
+</body>
+</html>
